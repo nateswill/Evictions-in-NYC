@@ -8,5 +8,5 @@ In this project I explore making maps with the [Python Plotly Express](https://p
 ## Heatmap
 ![Image](https://github.com/nateswill/Mapping_NYC_Evictions_Data/blob/main/images/heatmap.JPG)
 
-## Scatter plot
+## Scatter Plot
 ![Image](https://github.com/nateswill/Mapping_NYC_Evictions_Data/blob/main/images/scatterplot.JPG)
