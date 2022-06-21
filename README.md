@@ -2,7 +2,7 @@
 
 ## Table of contents
 - [Introduction](#Introduction)
-- [Exploratory Data Analysis: Evictions and Income in NYC](#Exploratory-Data-Analysis:-Evictions-and-Income-in-NYC)
+- [Evictions and Income in NYC](#Evictions-and-Income-in-NYC)
 - [Using Plotly Express and Mapping with NYC Open Data](#Using-Plotly-Express-and-Mapping-with-NYC-Open-Data)
 - [Geocoding with Nominatum and OpenStreetMap](#Geocoding-with-Nominatum-and-OpenStreetMap)
 
@@ -14,7 +14,7 @@ This is an exploratory data analysis of Evictions in NYC. As explained in this [
 
 Python and [Jupyter notebooks](https://jupyter.org/) were used for all analysis in this project. [Anaconda](https://www.anaconda.com/) is recommended for installing packages and dependencies for all notebooks. 
 
-## Exploratory Data Analysis: Evictions and Income in NYC
+## Evictions and Income in NYC
 - Notebook: [NYC_Evictions_Income.ipynb](https://github.com/nateswill/Evictions-in-NYC/blob/main/Jupyter_Notebooks/NYC_Evictions_Income.ipynb)
 ### Dependencies: the following Python libraries are used in this notebook
 - pandas
@@ -28,6 +28,24 @@ Python and [Jupyter notebooks](https://jupyter.org/) were used for all analysis 
 - [Evictions](https://data.cityofnewyork.us/City-Government/Evictions/6z8x-wfk4) data from NYC Open Data. This dataset provides evictions in NYC from January 2017 - present.
 - [Modified Zip Code Tabulation Areas (MODZCTA)](https://data.cityofnewyork.us/Health/Modified-Zip-Code-Tabulation-Areas-MODZCTA-/pri4-ifjk) was used to merge in NYC zip code geometries for mapping evictions and income data.
 
+### Story
+Is there a correlation between income and evictions?
+
+First let's take a look at evictions from NYC Open data. The data tracks evictions starting in January 2017. Below is a time series plot of evictions per day from January 2017 until today. There was a steep decline in the spring of 2020 when the eviction moratorium started. Then evictions were close to zero for a few months, until a gradual uptick began in the middle of 2021. Currently evictions are increasing steadily.
+
+![Image](https://github.com/nateswill/Evictions-in-NYC/blob/main/images/evic_time_series.png)
+
+What do cumulative evictions look like in NYC? 
+
+Below is a choropleth plot of evictions to date by zip code.  There are clear differences in evictions across zip codes, with the highest numbers appearing in the Bronx and northeast Brooklyn.
+
+![Images](https://github.com/nateswill/Evictions-in-NYC/blob/main/images/evictions.png)
+
+How does this compare with income? 
+
+In order to compare income to evictions, let's look at a choropleth plot of median incomes by zip code in NYC, using data from the 2020 ACS 5-years estimates. Visually speaking, there appears to be a strong negative correlation between income and evictions by zip code. Zip codes with the highest eviction counts tend to have lower median incomes. This is particularly true for our high eviction zips in the Bronx and Brooklyn, as they have some of the lowest median incomes in the City.
+
+![Image](https://github.com/nateswill/Evictions-in-NYC/blob/main/images/income.png)
 
 ## Using Plotly Express and Mapping with NYC Open Data
 
