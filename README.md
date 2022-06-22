@@ -68,13 +68,13 @@ Conclusion: After analyzing the relationship between income and zip code in NYC,
 ### Background
 Just for fun - I made maps with the [Python Plotly Express](https://plotly.com/python/plotly-express/) library. The plotly express library is easy to use and has lots of high level interactive features, similar to what you would find in mapping software like ArcGIS or QGIS. The maps use a lot of memory to run in Jupyter, so I loaded them to github as raw code. Download the notebook and run to get the full interactive experience! Below are images of a choropleth, heatmap and scatterplot of NYC evictions data.
 
-## Choropleth Plot
+### Choropleth Plot
 ![Image](https://github.com/nateswill/Mapping_NYC_Evictions_Data/blob/main/images/choropleth.JPG)
 
-## Heatmap
+### Heatmap
 ![Image](https://github.com/nateswill/Mapping_NYC_Evictions_Data/blob/main/images/heatmap.JPG)
 
-## Scatter Plot
+### Scatter Plot
 ![Image](https://github.com/nateswill/Mapping_NYC_Evictions_Data/blob/main/images/scatterplot.JPG)
 
 ## Geocoding with Nominatum and OpenStreetMap
